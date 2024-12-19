@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Declararea numerelor
+        let a = 5;
+        let b = 7;
+        let c = 2;
+        let d = 6;
+
+        // Algoritm de inteerschimbare pentru ordonare crescatoare
+        if (a > b) { let temp = a; a = b; b = temp; }
+        if (b > c) { let temp = b; b = c; c = temp; }
+        if (c > d) { let temp = c; c = d; d = temp; }
+
+        // Dupa prima trecere, verficam din nou pentru toate perechile
+        if (a > b) { let temp = a; a = b; b = temp; }
+        if (b > c) { let temp = a; b = c; c = temp; }
+        if (a > b) { let temp = a; a = b; b = temp; }
+
+        //Rezultatul
+        console.log(` Numerele ordonate sunt: ${a}, ${b}, ${c}, ${d}`);
+    </script>
+</body>
+
+</html>§

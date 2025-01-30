@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function salut(val) {
+            alert('Buna seara!' + val);
+        }
+    </script>
+
+    <input type="text" name="nume" id="nume" value="">
+
+
+    <button onclick="salut(nume)"> Salutare</button>
+    <button onclick="salut('Mihai')"> Salutare</button>
+    <button onclick="salut('Ion')"> Salutare</button>
+    <button onclick="salut('Vasile')"> Salutare</button>
+    <script>
+        let nume = document.getElementById('nume').value;
+        console.log(nume);
+        alert('Buna seara! ')
+    </script>
+</body>
+</html>
